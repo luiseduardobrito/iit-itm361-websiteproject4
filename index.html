@@ -9,19 +9,33 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <header class="grid-container">
-      <div class="grid-x grid-margin-x align-middle">
-        <div class="cell small-12 medium-8">
-          <p class="lead">Software engineer and founder</p>
-          <h1>Luis Eduardo Brito</h1>
-          <p>Co-Founder at Liquiditi, focused on financial infrastructure, cloud systems, and network security.</p>
-          <p>Sao Paulo, Brazil</p>
-        </div>
-        <div class="cell small-12 medium-4">
-          <figure>
-            <img src="media/images/profile.jpg" alt="Professional portrait of Luis Eduardo Brito">
-            <figcaption>Professional portrait of Luis Eduardo Brito.</figcaption>
-          </figure>
+    <nav class="site-nav" aria-label="Resume sections">
+      <div class="grid-container">
+        <ul class="menu align-center">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#selected-work">Selected Work</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="about" class="resume-header">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x align-middle">
+          <div class="cell small-12 medium-8">
+            <p class="eyebrow">Software engineer and founder</p>
+            <h1>Luis Eduardo Brito</h1>
+            <p class="lead">Co-Founder at Liquiditi, focused on financial infrastructure, cloud systems, and network security.</p>
+            <p class="location">Sao Paulo, Brazil</p>
+          </div>
+          <div class="cell small-12 medium-4">
+            <figure class="portrait">
+              <img src="media/images/profile.jpg" alt="Professional portrait of Luis Eduardo Brito">
+              <figcaption>Professional portrait of Luis Eduardo Brito.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </header>
@@ -29,7 +43,7 @@
     <main class="grid-container">
       <div class="grid-x grid-margin-x">
         <aside class="cell small-12 medium-4 large-3" aria-label="Resume details">
-          <section class="callout">
+          <section id="contact" class="callout sidebar-card">
             <h2>Contact</h2>
             <ul class="vertical menu">
               <li>
@@ -41,16 +55,16 @@
             </ul>
           </section>
 
-          <section class="callout">
+          <section class="callout sidebar-card">
             <h2>Skills</h2>
-            <ul>
+            <ul class="no-bullet skill-list">
               <li><span class="label">Software Engineering</span></li>
               <li><span class="label">Cloud Infrastructure</span></li>
               <li><span class="label">Network Security</span></li>
             </ul>
           </section>
 
-          <section class="callout">
+          <section class="callout sidebar-card">
             <h2>Languages</h2>
             <ul>
               <li>Portuguese, native or bilingual</li>
@@ -61,21 +75,21 @@
         </aside>
 
         <div class="cell small-12 medium-8 large-9">
-          <section>
+          <section id="experience" class="resume-section">
             <h2>Experience</h2>
 
-            <article class="callout">
+            <article class="callout experience-card">
               <h3>Co-Founder, Liquiditi</h3>
-              <p>
+              <p class="date-range">
                 <time datetime="2025-04">April 2025</time>
                 to present
               </p>
               <p>Building financial products that help teams move money and operate with less friction.</p>
             </article>
 
-            <article class="callout">
+            <article class="callout experience-card">
               <h3>Co-Founder, Bit Capital</h3>
-              <p>
+              <p class="date-range">
                 <time datetime="2018-06">June 2018</time>
                 to
                 <time datetime="2023-12">December 2023</time>
@@ -83,9 +97,9 @@
               <p>Built an open banking platform backed by blockchain technology for enterprise financial services. The company was later acquired by Ame Digital.</p>
             </article>
 
-            <article class="callout">
+            <article class="callout experience-card">
               <h3>Co-Founder and Technology Advisor, NuPay for Business</h3>
-              <p>
+              <p class="date-range">
                 <time datetime="2019-01">January 2019</time>
                 to
                 <time datetime="2020-07">July 2020</time>
@@ -93,9 +107,9 @@
               <p>Helped build the company formerly known as Spin Pay. It was later acquired by Nubank and rebranded as NuPay for Business.</p>
             </article>
 
-            <article class="callout">
+            <article class="callout experience-card">
               <h3>Innovation Consultant, nxtep.io</h3>
-              <p>
+              <p class="date-range">
                 <time datetime="2018-02">February 2018</time>
                 to
                 <time datetime="2020-07">July 2020</time>
@@ -103,9 +117,9 @@
               <p>Advised startups on cloud and financial services, team building, and infrastructure on Google Cloud, Amazon Web Services, and Microsoft Azure.</p>
             </article>
 
-            <article class="callout">
+            <article class="callout experience-card">
               <h3>CTO and Co-Founder, Devnup IT Solutions</h3>
-              <p>
+              <p class="date-range">
                 <time datetime="2014-04">April 2014</time>
                 to
                 <time datetime="2018-06">June 2018</time>
@@ -113,9 +127,9 @@
               <p>Led cloud web products, native mobile apps, and DevOps for highly available infrastructure used in indoor and outdoor data systems.</p>
             </article>
 
-            <article class="callout">
+            <article class="callout experience-card">
               <h3>Software Engineer, Clube da Entrega</h3>
-              <p>
+              <p class="date-range">
                 <time datetime="2014-02">February 2014</time>
                 to
                 <time datetime="2014-10">October 2014</time>
@@ -124,7 +138,45 @@
             </article>
           </section>
 
-          <section class="callout">
+          <section id="selected-work" class="resume-section">
+            <h2>Selected Work</h2>
+            <div class="grid-x grid-margin-x small-up-1 large-up-3">
+              <div class="cell">
+                <article class="card work-card">
+                  <img src="media/images/profile.jpg" alt="Professional portrait of Luis Eduardo Brito">
+                  <div class="card-section">
+                    <h3>Product Leadership</h3>
+                    <p>Building teams and technology around practical, trustworthy financial products.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="cell">
+                <article class="card work-card">
+                  <img src="media/images/bitcapital.jpg" alt="Bit Capital offices in Sao Paulo, Brazil">
+                  <div class="card-section">
+                    <h3>Bit Capital</h3>
+                    <p>Open banking infrastructure for enterprise financial services.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="cell">
+                <article class="card work-card">
+                  <img src="media/images/speakrfm.jpg" alt="Speakr.fm collaborative playlist interface">
+                  <div class="card-section">
+                    <h3>Speakr.fm</h3>
+                    <p>An early experiment in collaborative media and social product design.</p>
+                    <audio controls preload="none">
+                      <source src="media/audio/elevator-music.mp3" type="audio/mpeg">
+                      Your browser does not support embedded audio.
+                      <a href="media/audio/elevator-music.mp3">Download the audio sample</a>.
+                    </audio>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section id="education" class="callout education-card">
             <h2>Education</h2>
             <article>
               <h3>Computer Engineering, Universidade Estadual de Campinas</h3>
